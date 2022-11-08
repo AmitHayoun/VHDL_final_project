@@ -1,0 +1,34 @@
+library ieee ; 
+use ieee.std_logic_1164.all ;
+entity pipe is
+   generic (depth : natural := 1 ) ; -- include zero too !
+   port ( resetN : in std_logic    ;
+          clk    : in std_logic    ;
+          din    : in std_logic    ;
+          dout   : out std_logic ) ;
+end pipe ;
+architecture arc_pipe of pipe is
+   signal d : std_logic_vector (depth downto 0) ;
+   
+   procedure dffx ( signal resetN, clk, d : in std_logic  ;
+					signal q			  : out std_logic ) is
+   begin
+      if resetN = '0' then
+	     q <= '0' ;
+	  elsif rising_edge(clk) then
+	     q <= d  ;
+	  end if ;
+   end dffx ;
+begin
+   u0 : if (depth = 0) generate
+      dout <= din ;
+   end generate ;
+   
+   u1 : if (0 < depth) generate
+      d(depth) <= din ;
+      dffx_gen : for i in 0 to (depth - 1) generate
+         dffx ( resetN, clk, d(i + 1), d(i) ) ;
+      end generate ; 
+      dout <= d(0) ;
+   end generate ;
+end arc_pipe ;

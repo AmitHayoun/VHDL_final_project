@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inst12'
+Slack : -5.222
+TNS   : -511.332
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : 0.105
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.023
+TNS   : -0.023
+
+Type  : Slow 1200mV 85C Model Hold 'inst12'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inst12'
+Slack : -1.774
+TNS   : -51.554
+
+Type  : Slow 1200mV 85C Model Removal 'inst12'
+Slack : 1.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst12'
+Slack : -2.174
+TNS   : -309.174
+
+Type  : Slow 1200mV 0C Model Setup 'inst12'
+Slack : -4.631
+TNS   : -429.385
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.091
+TNS   : -0.091
+
+Type  : Slow 1200mV 0C Model Hold 'inst12'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inst12'
+Slack : -1.492
+TNS   : -41.729
+
+Type  : Slow 1200mV 0C Model Removal 'inst12'
+Slack : 1.188
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst12'
+Slack : -2.174
+TNS   : -309.174
+
+Type  : Fast 1200mV 0C Model Setup 'inst12'
+Slack : -2.600
+TNS   : -182.147
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.072
+TNS   : -0.072
+
+Type  : Fast 1200mV 0C Model Hold 'inst12'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst12'
+Slack : -0.672
+TNS   : -12.378
+
+Type  : Fast 1200mV 0C Model Removal 'inst12'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.044
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst12'
+Slack : -1.000
+TNS   : -308.000
+
+------------------------------------------------------------

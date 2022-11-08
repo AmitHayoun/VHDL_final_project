@@ -1,0 +1,39 @@
+Quartus II Archive log --	C:/VHDL/Work/game_project/vhdl_type_game.qarlog
+
+Archive:	C:/VHDL/Work/game_project/vhdl_type_game.qar
+Date:		Tue Nov 08 22:28:03 2022
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/VHDL/Work/game_project/HEXSS.vhd
+C:/VHDL/Work/game_project/LPF.vhd
+C:/VHDL/Work/game_project/UART_to_VGA.vhd
+C:/VHDL/Work/game_project/bitrec.vhd
+C:/VHDL/Work/game_project/byterec.vhd
+C:/VHDL/Work/game_project/chr_state_gen8.vhd
+C:/VHDL/Work/game_project/chrgen8.MIF
+C:/VHDL/Work/game_project/connectors.vhd
+C:/VHDL/Work/game_project/done_trans.vhd
+C:/VHDL/Work/game_project/dup4.vhd
+C:/VHDL/Work/game_project/game_level.bdf
+C:/VHDL/Work/game_project/game_level.qsf
+C:/VHDL/Work/game_project/game_level_pins.tcl
+C:/VHDL/Work/game_project/kbd.bdf
+C:/VHDL/Work/game_project/kbd_pack.bdf
+C:/VHDL/Work/game_project/pipe.vhd
+C:/VHDL/Work/game_project/receiver.vhd
+C:/VHDL/Work/game_project/reg6.vhd
+C:/VHDL/Work/game_project/reg8.vhd
+C:/VHDL/Work/game_project/rise.vhd
+C:/VHDL/Work/game_project/transmitter.vhd
+C:/VHDL/Work/game_project/txt_state_gen.vhd
+C:/VHDL/Work/game_project/uart_complete.bdf
+C:/VHDL/Work/game_project/uart_pack.bdf
+C:/VHDL/Work/game_project/uart_to_vga.vhd
+C:/VHDL/Work/game_project/vgasync.vhd
+C:/VHDL/Work/game_project/vhdl_type_game.qpf
+c:/vhdl/quartos/quartus/bin/assignment_defaults.qdf
+	======= Total: 28 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

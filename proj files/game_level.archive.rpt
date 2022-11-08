@@ -1,0 +1,100 @@
+Archive Project report for game_level
+Tue Nov 08 22:28:03 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Nov 08 22:28:03 2022 ;
+; Revision Name          ; game_level                            ;
+; Top-level Entity Name  ; game_level                            ;
+; Family                 ; Cyclone III                           ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/VHDL/Work/game_project/vhdl_type_game.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'game_level.archive.rpt'
+Info: Evaluation of Tcl script c:/vhdl/quartos/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 149 megabytes
+    Info: Processing ended: Tue Nov 08 22:28:03 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++-----------------------------------------------------+
+; Files Archived                                      ;
++-----------------------------------------------------+
+; File Name                                           ;
++-----------------------------------------------------+
+; bitrec.vhd                                          ;
+; byterec.vhd                                         ;
+; c:/vhdl/quartos/quartus/bin/assignment_defaults.qdf ;
+; chr_state_gen8.vhd                                  ;
+; chrgen8.MIF                                         ;
+; connectors.vhd                                      ;
+; done_trans.vhd                                      ;
+; dup4.vhd                                            ;
+; game_level.bdf                                      ;
+; game_level.qsf                                      ;
+; game_level_pins.tcl                                 ;
+; HEXSS.vhd                                           ;
+; kbd.bdf                                             ;
+; kbd_pack.bdf                                        ;
+; LPF.vhd                                             ;
+; pipe.vhd                                            ;
+; receiver.vhd                                        ;
+; reg6.vhd                                            ;
+; reg8.vhd                                            ;
+; rise.vhd                                            ;
+; transmitter.vhd                                     ;
+; txt_state_gen.vhd                                   ;
+; uart_complete.bdf                                   ;
+; uart_pack.bdf                                       ;
+; UART_to_VGA.vhd                                     ;
+; uart_to_vga.vhd                                     ;
+; vgasync.vhd                                         ;
+; vhdl_type_game.qpf                                  ;
++-----------------------------------------------------+
+
+

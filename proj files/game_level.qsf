@@ -1,0 +1,150 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 01:28:16  November 08, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		game_level_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY game_level
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:28:16  NOVEMBER 08, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_location_assignment PIN_G21 -to clk
+set_location_assignment PIN_H2 -to resetN
+set_location_assignment PIN_G3 -to read_dout
+set_location_assignment PIN_E4 -to sel
+set_location_assignment PIN_D2 -to sel_sw
+set_location_assignment PIN_J1 -to out[0]
+set_location_assignment PIN_J2 -to out[1]
+set_location_assignment PIN_J3 -to out[2]
+set_location_assignment PIN_H1 -to out[3]
+set_location_assignment PIN_F2 -to out[4]
+set_location_assignment PIN_E1 -to out[5]
+set_location_assignment PIN_C1 -to out[6]
+set_location_assignment PIN_C2 -to out[7]
+set_location_assignment PIN_B2 -to tx_ready
+set_location_assignment PIN_B1 -to rx_ready
+set_location_assignment PIN_D13 -to dout_ready
+set_location_assignment PIN_F13 -to HEX0S[0]
+set_location_assignment PIN_F12 -to HEX0S[1]
+set_location_assignment PIN_G12 -to HEX0S[2]
+set_location_assignment PIN_H13 -to HEX0S[3]
+set_location_assignment PIN_H12 -to HEX0S[4]
+set_location_assignment PIN_F11 -to HEX0S[5]
+set_location_assignment PIN_E11 -to HEX0S[6]
+set_location_assignment PIN_A15 -to HEX1S[0]
+set_location_assignment PIN_E14 -to HEX1S[1]
+set_location_assignment PIN_B14 -to HEX1S[2]
+set_location_assignment PIN_A14 -to HEX1S[3]
+set_location_assignment PIN_C13 -to HEX1S[4]
+set_location_assignment PIN_B13 -to HEX1S[5]
+set_location_assignment PIN_A13 -to HEX1S[6]
+set_location_assignment PIN_F14 -to HEX2S[0]
+set_location_assignment PIN_B17 -to HEX2S[1]
+set_location_assignment PIN_A17 -to HEX2S[2]
+set_location_assignment PIN_E15 -to HEX2S[3]
+set_location_assignment PIN_B16 -to HEX2S[4]
+set_location_assignment PIN_A16 -to HEX2S[5]
+set_location_assignment PIN_D15 -to HEX2S[6]
+set_location_assignment PIN_G16 -to write
+set_location_assignment PIN_G15 -to HEX3S[0]
+set_location_assignment PIN_D19 -to HEX3S[1]
+set_location_assignment PIN_C19 -to HEX3S[2]
+set_location_assignment PIN_B19 -to HEX3S[3]
+set_location_assignment PIN_A19 -to HEX3S[4]
+set_location_assignment PIN_F15 -to HEX3S[5]
+set_location_assignment PIN_B18 -to HEX3S[6]
+set_location_assignment PIN_U22 -to rx
+set_location_assignment PIN_U21 -to tx
+set_location_assignment PIN_H19 -to RED[0]
+set_location_assignment PIN_H17 -to RED[1]
+set_location_assignment PIN_H20 -to RED[2]
+set_location_assignment PIN_H21 -to RED[3]
+set_location_assignment PIN_H22 -to GREEN[0]
+set_location_assignment PIN_J17 -to GREEN[1]
+set_location_assignment PIN_K17 -to GREEN[2]
+set_location_assignment PIN_J21 -to GREEN[3]
+set_location_assignment PIN_K22 -to BLUE[0]
+set_location_assignment PIN_K21 -to BLUE[1]
+set_location_assignment PIN_J22 -to BLUE[2]
+set_location_assignment PIN_K18 -to BLUE[3]
+set_location_assignment PIN_L21 -to HORZ_SYNC
+set_location_assignment PIN_L22 -to VERT_SYNC
+set_location_assignment PIN_P22 -to KBD_CLK
+set_location_assignment PIN_P21 -to KBD_DAT
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+set_location_assignment PIN_D2 -to out_sel
+set_global_assignment -name VHDL_FILE connectors.vhd
+set_global_assignment -name VHDL_FILE reg6.vhd
+set_global_assignment -name VHDL_FILE uart_to_vga.vhd
+set_global_assignment -name TCL_SCRIPT_FILE game_level_pins.tcl
+set_global_assignment -name VHDL_FILE bitrec.vhd
+set_global_assignment -name VHDL_FILE byterec.vhd
+set_global_assignment -name VHDL_FILE chr_state_gen8.vhd
+set_global_assignment -name VHDL_FILE done_trans.vhd
+set_global_assignment -name VHDL_FILE dup4.vhd
+set_global_assignment -name BDF_FILE game_level.bdf
+set_global_assignment -name VHDL_FILE HEXSS.vhd
+set_global_assignment -name BDF_FILE kbd.bdf
+set_global_assignment -name BDF_FILE kbd_pack.bdf
+set_global_assignment -name VHDL_FILE LPF.vhd
+set_global_assignment -name VHDL_FILE pipe.vhd
+set_global_assignment -name VHDL_FILE receiver.vhd
+set_global_assignment -name VHDL_FILE reg8.vhd
+set_global_assignment -name VHDL_FILE rise.vhd
+set_global_assignment -name VHDL_FILE transmitter.vhd
+set_global_assignment -name VHDL_FILE txt_state_gen.vhd
+set_global_assignment -name BDF_FILE uart_complete.bdf
+set_global_assignment -name BDF_FILE uart_pack.bdf
+set_global_assignment -name VHDL_FILE vgasync.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

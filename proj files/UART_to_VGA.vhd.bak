@@ -1,0 +1,117 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+
+entity uart_to_vga is
+   port ( resetN : in  std_logic                      ;
+          clk    : in  std_logic                      ;
+          ena    : in  std_logic                      ;
+          din    : in  std_logic_vector(7 downto 0)   ;
+          dout0  : out std_logic_vector(5 downto 0)   ;
+          dout1  : out std_logic_vector(5 downto 0)   ;
+          dout2  : out std_logic_vector(5 downto 0)   ;
+          dout3  : out std_logic_vector(5 downto 0)   ;
+          dout4  : out std_logic_vector(5 downto 0)   ;
+          dout5  : out std_logic_vector(5 downto 0)   ;
+          dout6  : out std_logic_vector(5 downto 0)   ;
+          dout7  : out std_logic_vector(5 downto 0)   ;
+          dout8  : out std_logic_vector(5 downto 0)   ;
+          dout9  : out std_logic_vector(5 downto 0) ) ;
+end uart_to_vga ;
+
+architecture arc_uart_to_vga of uart_to_vga is
+
+   -- component declarations 
+   component reg6
+      port ( resetN , clk : in  std_logic                      ;
+             ena          : in  std_logic                      ;
+             din          : in  std_logic_vector(5 downto 0)   ;
+             dout         : out std_logic_vector(5 downto 0) ) ;
+   end component ;
+   
+   -- actual internal signals
+   signal d0_int : std_logic_vector(5 downto 0) ;
+   signal d1_int : std_logic_vector(5 downto 0) ;
+   signal d2_int : std_logic_vector(5 downto 0) ;
+   signal d3_int : std_logic_vector(5 downto 0) ;
+   signal d4_int : std_logic_vector(5 downto 0) ;
+   signal d5_int : std_logic_vector(5 downto 0) ;
+   signal d6_int : std_logic_vector(5 downto 0) ;
+   signal d7_int : std_logic_vector(5 downto 0) ;
+   signal d8_int : std_logic_vector(5 downto 0) ;
+   signal d9_int : std_logic_vector(5 downto 0) ;
+   
+   subtype uart  is std_logic_vector(7 downto 0) ;
+   subtype addr  is std_logic_vector(5 downto 0) ;
+   signal din_addr : addr 						 ;
+   
+   function uart_to_addr ( ascii : uart) return addr is
+   begin
+      case ascii is
+         when "00110000" => return("000000") ; -- 0
+         when "00110001" => return("000001") ; -- 1
+         when "00110010" => return("000010") ; -- 2
+         when "00110011" => return("000011") ; -- 3
+         when "00110100" => return("000100") ; -- 4
+         when "00110101" => return("000101") ; -- 5
+         when "00110110" => return("000110") ; -- 6
+         when "00110111" => return("000111") ; -- 7
+         when "00111000" => return("001000") ; -- 8
+         when "00111001" => return("001001") ; -- 9
+         when "01000001" => return("001010") ; -- A
+         when "01000010" => return("001011") ; -- B
+         when "01000011" => return("001100") ; -- C
+         when "01000100" => return("001101") ; -- D
+         when "01000101" => return("001110") ; -- E
+         when "01000110" => return("001111") ; -- F
+         when "01000111" => return("010000") ; -- G
+         when "01001000" => return("010001") ; -- H
+         when "01001001" => return("010010") ; -- I
+         when "01001010" => return("010011") ; -- J
+         when "01001011" => return("010100") ; -- K
+         when "01001100" => return("010101") ; -- L
+         when "01001101" => return("010110") ; -- M
+         when "01001110" => return("010111") ; -- N
+         when "01001111" => return("011000") ; -- O
+         when "01010000" => return("011001") ; -- P
+         when "01010001" => return("011010") ; -- Q
+         when "01010010" => return("011011") ; -- R
+         when "01010011" => return("011100") ; -- S
+         when "01010100" => return("011101") ; -- T
+         when "01010101" => return("011110") ; -- U
+         when "01010110" => return("011111") ; -- V
+         when "01010111" => return("100000") ; -- W
+         when "01011000" => return("100001") ; -- X
+         when "01011001" => return("100010") ; -- Y
+         when "01011010" => return("100011") ; -- Z
+         when others     => return("110000") ; -- space
+      end case ;
+   end ;
+   
+begin
+	
+	-- convert ascii input to address
+   din_addr <= uart_to_addr(din) ;
+	
+   u0: reg6 port map ( resetN, clk, ena, din_addr, d0_int) ;
+   u1: reg6 port map ( resetN, clk, ena, d0_int  , d1_int) ;
+   u2: reg6 port map ( resetN, clk, ena, d1_int  , d2_int) ;
+   u3: reg6 port map ( resetN, clk, ena, d2_int  , d3_int) ;
+   u4: reg6 port map ( resetN, clk, ena, d3_int  , d4_int) ;
+   u5: reg6 port map ( resetN, clk, ena, d4_int  , d5_int) ;
+   u6: reg6 port map ( resetN, clk, ena, d5_int  , d6_int) ;
+   u7: reg6 port map ( resetN, clk, ena, d6_int  , d7_int) ;
+   u8: reg6 port map ( resetN, clk, ena, d7_int  , d8_int) ;
+   u9: reg6 port map ( resetN, clk, ena, d8_int  , d9_int) ;
+   
+   dout9 <= d0_int ;
+   dout8 <= d1_int ;
+   dout7 <= d2_int ;
+   dout6 <= d3_int ;
+   dout5 <= d4_int ;
+   dout4 <= d5_int ;
+   dout3 <= d6_int ;
+   dout2 <= d7_int ;
+   dout1 <= d8_int ;
+   dout0 <= d9_int ;
+   
+end arc_uart_to_vga ;
